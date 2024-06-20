@@ -5,6 +5,8 @@
 [![Nuget](https://img.shields.io/nuget/v/Nefarius.Vicius.Abstractions)](https://www.nuget.org/packages/Nefarius.Vicius.Abstractions/) 
 [![Nuget](https://img.shields.io/nuget/dt/Nefarius.Vicius.Abstractions)](https://www.nuget.org/packages/Nefarius.Vicius.Abstractions/)
 
+WIP 🔥
+
 ## Documentation
 
 [Link to API docs](docs/index.md).
