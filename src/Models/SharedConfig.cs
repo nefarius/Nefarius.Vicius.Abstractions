@@ -7,6 +7,7 @@ namespace Nefarius.Vicius.Abstractions.Models;
 /// </summary>
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+[SuppressMessage("ReSharper", "UnusedMember.Global")]
 public sealed class SharedConfig
 {
     private ProductVersionDetectionImplementation? _detection;

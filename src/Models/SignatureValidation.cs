@@ -62,6 +62,7 @@ public enum SignatureVerificationStrategy
 /// </summary>
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+[SuppressMessage("ReSharper", "UnusedMember.Global")]
 public sealed class SignatureConfig
 {
     /// <summary>
