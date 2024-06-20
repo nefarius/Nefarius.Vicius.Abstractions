@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace Nefarius.Vicius.Example.Server.Models;
+namespace Nefarius.Vicius.Abstractions.Models;
 
 /// <summary>
 ///     Parameters that might be provided by both the server and the local configuration.

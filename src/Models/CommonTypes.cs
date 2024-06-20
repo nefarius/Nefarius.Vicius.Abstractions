@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Nefarius.Vicius.Example.Server.Models;
+namespace Nefarius.Vicius.Abstractions.Models;
 
 /// <summary>
 ///     The supported checksum/hashing algorithms.

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Nefarius.Vicius.Example.Server.Models;
+namespace Nefarius.Vicius.Abstractions.Models;
 
 /// <summary>
 ///     An instance returned by the remote update API.

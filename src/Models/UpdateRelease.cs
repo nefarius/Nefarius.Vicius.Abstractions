@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 
 using NJsonSchema.Annotations;
 
-namespace Nefarius.Vicius.Example.Server.Models;
+namespace Nefarius.Vicius.Abstractions.Models;
 
 /// <summary>
 ///     Setup exit code parameters.

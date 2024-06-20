@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 using Newtonsoft.Json.Converters;
 
-namespace Nefarius.Vicius.Example.Server.Models;
+namespace Nefarius.Vicius.Abstractions.Models;
 
 /// <summary>
 ///     The detection method of the installed software to use on the client.

@@ -2,7 +2,7 @@
 
 using NJsonSchema.Annotations;
 
-namespace Nefarius.Vicius.Example.Server.Models;
+namespace Nefarius.Vicius.Abstractions.Models;
 
 /// <summary>
 ///     Update instance configuration. Parameters applying to the entire product/tenant.
