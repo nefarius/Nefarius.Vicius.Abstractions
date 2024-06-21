@@ -5,7 +5,7 @@
 [![Nuget](https://img.shields.io/nuget/v/Nefarius.Vicius.Abstractions)](https://www.nuget.org/packages/Nefarius.Vicius.Abstractions/) 
 [![Nuget](https://img.shields.io/nuget/dt/Nefarius.Vicius.Abstractions)](https://www.nuget.org/packages/Nefarius.Vicius.Abstractions/)
 
-WIP 🔥
+Managed types for the [vīcĭus updater agent](https://github.com/nefarius/vicius) JSON payloads.
 
 ## Documentation
 
