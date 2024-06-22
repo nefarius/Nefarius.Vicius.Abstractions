@@ -29,7 +29,7 @@ public UpdateConfig Instance { get; set; }
 The available update releases.
 
 ```csharp
-public List<UpdateRelease> Releases { get; }
+public List<UpdateRelease> Releases { get; set; }
 ```
 
 #### Property Value
