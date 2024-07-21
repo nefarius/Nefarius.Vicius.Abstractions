@@ -10,6 +10,10 @@ public sealed class SharedConfig
 
 Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → [SharedConfig](./nefarius.vicius.abstractions.models.sharedconfig.md)
 
+**Remarks:**
+
+Keep in sync with [MergedConfig](./nefarius.vicius.abstractions.models.mergedconfig.md).
+
 ## Properties
 
 ### <a id="properties-detection"/>**Detection**
@@ -47,6 +51,10 @@ public DownloadLocationConfig DownloadLocation { get; set; }
 #### Property Value
 
 [DownloadLocationConfig](./nefarius.vicius.abstractions.models.downloadlocationconfig.md)<br>
+
+**Remarks:**
+
+By default, a temporary directory of the current user is used.
 
 ### <a id="properties-installationerrorurl"/>**InstallationErrorUrl**
 

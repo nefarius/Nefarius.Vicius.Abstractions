@@ -6,6 +6,7 @@ namespace Nefarius.Vicius.Abstractions.Models;
 /// <summary>
 ///     The shared configuration that has been merged with local and remote parameters.
 /// </summary>
+/// <remarks>Keep in sync with <see cref="SharedConfig"/>.</remarks>
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
 public sealed class MergedConfig
@@ -43,6 +44,7 @@ public sealed class MergedConfig
     /// <summary>
     ///     The preferred setup download directory.
     /// </summary>
+    /// <remarks>By default, a temporary directory of the current user is used.</remarks>
     [Required]
     public required DownloadLocationConfig DownloadLocation { get; set; }
 
