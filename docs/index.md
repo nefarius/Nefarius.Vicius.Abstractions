@@ -1,5 +1,9 @@
 # Assembly Nefarius.Vicius.Abstractions
 
+## Namespace Nefarius.Vicius.Abstractions.Converters
+
+- [DateTimeOffsetConverter](./nefarius.vicius.abstractions.converters.datetimeoffsetconverter.md)
+
 ## Namespace Nefarius.Vicius.Abstractions.Models
 
 - [ChecksumAlgorithm](./nefarius.vicius.abstractions.models.checksumalgorithm.md)

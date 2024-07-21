@@ -72,6 +72,18 @@ public string ProductName { get; set; }
 
 [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)<br>
 
+### <a id="properties-runastemporarycopy"/>**RunAsTemporaryCopy**
+
+Gets or sets whether the updater should run as a temporary copy instead from the origin directory.
+
+```csharp
+public Nullable<Boolean> RunAsTemporaryCopy { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;Boolean&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.nullable-1)<br>
+
 ### <a id="properties-windowtitle"/>**WindowTitle**
 
 The process window title visible in the taskbar.
