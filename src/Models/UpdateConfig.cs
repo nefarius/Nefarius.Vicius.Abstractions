@@ -9,6 +9,7 @@ namespace Nefarius.Vicius.Abstractions.Models;
 /// </summary>
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
+[SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
 public sealed class UpdateConfig
 {
     /// <summary>

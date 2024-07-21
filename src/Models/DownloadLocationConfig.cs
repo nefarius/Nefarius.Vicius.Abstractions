@@ -9,6 +9,7 @@ namespace Nefarius.Vicius.Abstractions.Models;
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
+[SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
 public sealed class DownloadLocationConfig
 {
     /// <summary>
