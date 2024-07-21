@@ -8,6 +8,7 @@ namespace Nefarius.Vicius.Abstractions.Models;
 [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
+[SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
 public sealed class SharedConfig
 {
     private ProductVersionDetectionImplementation? _detection;
@@ -58,9 +59,14 @@ public sealed class SharedConfig
     ///     The preferred setup download directory.
     /// </summary>
     public DownloadLocationConfig? DownloadLocation { get; set; }
-    
+
     /// <summary>
     ///     Gets or sets whether the updater should run as a temporary copy instead from the origin directory.
     /// </summary>
+    /// <example>
+    ///     This feature is useful when the updater is shipped with a product using Windows Installer, which detects open
+    ///     processes that block an upgrade. Enabling this setting re-launches the updater process from a temporary copy so
+    ///     on-the-fly upgrades in the origin directory become possible.
+    /// </example>
     public bool? RunAsTemporaryCopy { get; set; }
 }
