@@ -45,4 +45,10 @@ public sealed class MergedConfig
     /// </summary>
     [Required]
     public required DownloadLocationConfig DownloadLocation { get; set; }
+    
+    /// <summary>
+    ///     Gets or sets whether the updater should run as a temporary copy instead from the origin directory.
+    /// </summary>
+    [Required]
+    public required bool RunAsTemporaryCopy { get; set; }
 }

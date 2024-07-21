@@ -58,4 +58,9 @@ public sealed class SharedConfig
     ///     The preferred setup download directory.
     /// </summary>
     public DownloadLocationConfig? DownloadLocation { get; set; }
+    
+    /// <summary>
+    ///     Gets or sets whether the updater should run as a temporary copy instead from the origin directory.
+    /// </summary>
+    public bool? RunAsTemporaryCopy { get; set; }
 }
