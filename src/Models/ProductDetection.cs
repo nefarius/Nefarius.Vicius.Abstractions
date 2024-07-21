@@ -58,9 +58,7 @@ public enum ProductVersionDetectionMethod
 [KnownType(typeof(FileChecksumConfig))]
 [JsonDerivedType(typeof(CustomExpressionConfig), nameof(CustomExpressionConfig))]
 [KnownType(typeof(CustomExpressionConfig))]
-public abstract class ProductVersionDetectionImplementation
-{
-}
+public abstract class ProductVersionDetectionImplementation;
 
 /// <summary>
 ///     Queries a specific registry value and matches it against the selected <see cref="UpdateRelease" /> version.
