@@ -190,6 +190,32 @@ public Version Version { get; set; }
 
 [Version](https://docs.microsoft.com/en-us/dotnet/api/system.version)<br>
 
+### <a id="properties-zipextractdefaultfiledisposition"/>**ZipExtractDefaultFileDisposition**
+
+Specifies how to handle files in a zip update, unless overriden via
+ [UpdateRelease.ZipExtractFileDispositionOverrides](./nefarius.vicius.abstractions.models.updaterelease.md#zipextractfiledispositionoverrides).
+
+```csharp
+public Nullable<ZipExtractFileDisposition> ZipExtractDefaultFileDisposition { get; set; }
+```
+
+#### Property Value
+
+[Nullable&lt;ZipExtractFileDisposition&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.nullable-1)<br>
+
+### <a id="properties-zipextractfiledispositionoverrides"/>**ZipExtractFileDispositionOverrides**
+
+Overrides the behavior for specific files in a zip update. Trumps [UpdateRelease.ZipExtractDefaultFileDisposition](./nefarius.vicius.abstractions.models.updaterelease.md#zipextractdefaultfiledisposition)
+ if set.
+
+```csharp
+public Dictionary<String, ZipExtractFileDisposition> ZipExtractFileDispositionOverrides { get; set; }
+```
+
+#### Property Value
+
+[Dictionary&lt;String, ZipExtractFileDisposition&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)<br>
+
 ## Constructors
 
 ### <a id="constructors-.ctor"/>**UpdateRelease()**

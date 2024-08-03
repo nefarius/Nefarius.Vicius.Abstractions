@@ -49,3 +49,5 @@
 - [UpdateResponse](./nefarius.vicius.abstractions.models.updateresponse.md)
 
 - [VersionResource](./nefarius.vicius.abstractions.models.versionresource.md)
+
+- [ZipExtractFileDisposition](./nefarius.vicius.abstractions.models.zipextractfiledisposition.md)
