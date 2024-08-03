@@ -112,3 +112,30 @@ public enum VersionResource
     [EnumMember(Value = nameof(PRODUCTVERSION))]
     PRODUCTVERSION
 }
+
+/// <summary>
+///     How to treat files when installing a .zip file.
+/// </summary>
+[SuppressMessage("ReSharper", "InconsistentNaming")]
+[SuppressMessage("ReSharper", "UnusedMember.Global")]
+[JsonConverter(typeof(StringEnumConverter))]
+public enum ZipExtractFileDisposition
+{
+    /// <summary>
+    ///     Create the extracted file if it doesn't already exist locally.
+    /// </summary>
+    [EnumMember(Value = nameof(CreateIfAbsent))]
+    CreateIfAbsent,
+
+    /// <summary>
+    ///     Create or replace a locally existing file with the extracted one of the same name. 
+    /// </summary>
+    [EnumMember(Value = nameof(CreateOrReplace))]
+    CreateOrReplace,
+
+    /// <summary>
+    ///     Delete the local file, if found.
+    /// </summary>
+    [EnumMember(Value = nameof(DeleteIfPresent))]
+    DeleteIfPresent
+}
