@@ -142,4 +142,16 @@ public sealed class UpdateRelease
     /// </summary>
     [JsonSchemaType(typeof(string))]
     public Version? DetectionVersion { get; set; }
+
+    /// <summary>
+    ///     Specifies how to handle files in a zip update, unless overriden via
+    ///     <see cref="ZipExtractFileDispositionOverrides" />.
+    /// </summary>
+    public ZipExtractFileDisposition? ZipExtractDefaultFileDisposition { get; set; }
+
+    /// <summary>
+    ///     Overrides the behavior for specific files in a zip update. Trumps <see cref="ZipExtractDefaultFileDisposition" />
+    ///     if set.
+    /// </summary>
+    public Dictionary<string, ZipExtractFileDisposition>? ZipExtractFileDispositionOverrides { get; set; }
 }
