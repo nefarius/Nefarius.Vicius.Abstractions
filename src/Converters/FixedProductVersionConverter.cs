@@ -1,26 +1,27 @@
-using Nefarius.Vicius.Abstractions.Models;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
-using Newtonsoft.Json;
+using Nefarius.Vicius.Abstractions.Models;
 
 namespace Nefarius.Vicius.Abstractions.Converters;
 
 /// <summary>
-///     Converts a <see cref="FixedVersionConfig"/> instance to and from JSON.
+///     Converts a <see cref="FixedVersionConfig" /> instance to and from JSON.
 /// </summary>
 public sealed class FixedProductVersionConverter : JsonConverter<FixedVersionConfig>
 {
     /// <inheritdoc />
-    public override void WriteJson(JsonWriter writer, FixedVersionConfig? value, JsonSerializer serializer)
+    public override FixedVersionConfig? Read(ref Utf8JsonReader reader, Type typeToConvert,
+        JsonSerializerOptions options)
     {
-        writer.WriteValue(value?.ToString());
+        string? version = reader.GetString();
+
+        return version is null ? null : new FixedVersionConfig { Version = version };
     }
 
     /// <inheritdoc />
-    public override FixedVersionConfig? ReadJson(JsonReader reader, Type objectType, FixedVersionConfig? existingValue,
-        bool hasExistingValue, JsonSerializer serializer)
+    public override void Write(Utf8JsonWriter writer, FixedVersionConfig? value, JsonSerializerOptions options)
     {
-        string? version = reader.ReadAsString();
-
-        return version is null ? null : new FixedVersionConfig { Version = version };
+        writer.WriteStringValue(value?.Version);
     }
 }
