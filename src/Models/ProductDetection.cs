@@ -183,19 +183,11 @@ public sealed class CustomExpressionConfig : ProductVersionDetectionImplementati
 ///     A custom expression to evaluate.
 /// </summary>
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
-[JsonConverter(typeof(FixedProductVersionConverter))]
 public sealed class FixedVersionConfig : ProductVersionDetectionImplementation
 {
     /// <summary>
     ///     The version string.
     /// </summary>
     [Required]
-    [JsonIgnore]
     public required string Version { get; set; }
-
-    /// <inheritdoc/>
-    public override string ToString()
-    {
-        return Version;
-    }
 }
