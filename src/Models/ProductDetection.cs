@@ -3,6 +3,8 @@ using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 
+using Nefarius.Vicius.Abstractions.Converters;
+
 using Newtonsoft.Json.Converters;
 
 namespace Nefarius.Vicius.Abstractions.Models;
@@ -42,7 +44,13 @@ public enum ProductVersionDetectionMethod
     ///     Custom inja expression.
     /// </summary>
     [EnumMember(Value = nameof(CustomExpression))]
-    CustomExpression
+    CustomExpression,
+    
+    /// <summary>
+    ///     A fixed version string.
+    /// </summary>
+    [EnumMember(Value = nameof(FixedVersion))]
+    FixedVersion
 }
 
 /// <summary>
@@ -58,6 +66,8 @@ public enum ProductVersionDetectionMethod
 [KnownType(typeof(FileChecksumConfig))]
 [JsonDerivedType(typeof(CustomExpressionConfig), nameof(CustomExpressionConfig))]
 [KnownType(typeof(CustomExpressionConfig))]
+[JsonDerivedType(typeof(FixedVersionConfig), nameof(FixedVersionConfig))]
+[KnownType(typeof(FixedVersionConfig))]
 public abstract class ProductVersionDetectionImplementation;
 
 /// <summary>
@@ -167,4 +177,17 @@ public sealed class CustomExpressionConfig : ProductVersionDetectionImplementati
     ///     Optional inja template data.
     /// </summary>
     public Dictionary<string, string>? Data { get; set; }
+}
+
+/// <summary>
+///     A custom expression to evaluate.
+/// </summary>
+[SuppressMessage("ReSharper", "UnusedMember.Global")]
+public sealed class FixedVersionConfig : ProductVersionDetectionImplementation
+{
+    /// <summary>
+    ///     The version string.
+    /// </summary>
+    [Required]
+    public required string Version { get; set; }
 }

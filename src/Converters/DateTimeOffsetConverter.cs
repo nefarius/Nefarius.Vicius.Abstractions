@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Nefarius.Vicius.Abstractions.Converters;
@@ -6,6 +7,7 @@ namespace Nefarius.Vicius.Abstractions.Converters;
 /// <summary>
 ///     <see cref="DateTimeOffset" /> to ISO 8601 (or custom formats) string (UTC) converter.
 /// </summary>
+[SuppressMessage("ReSharper", "UnusedType.Global")]
 public sealed class DateTimeOffsetConverter : JsonConverter<DateTimeOffset>
 {
     private readonly string _format;

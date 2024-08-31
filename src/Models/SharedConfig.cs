@@ -44,6 +44,7 @@ public sealed class SharedConfig
                 FileSizeConfig _ => ProductVersionDetectionMethod.FileSize,
                 FileChecksumConfig _ => ProductVersionDetectionMethod.FileChecksum,
                 CustomExpressionConfig _ => ProductVersionDetectionMethod.CustomExpression,
+                FixedVersionConfig _ => ProductVersionDetectionMethod.FixedVersion,
                 _ => DetectionMethod
             };
 
