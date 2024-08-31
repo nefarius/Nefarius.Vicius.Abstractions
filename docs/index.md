@@ -22,6 +22,8 @@
 
 - [FileVersionConfig](./nefarius.vicius.abstractions.models.fileversionconfig.md)
 
+- [FixedVersionConfig](./nefarius.vicius.abstractions.models.fixedversionconfig.md)
+
 - [MergedConfig](./nefarius.vicius.abstractions.models.mergedconfig.md)
 
 - [ProductVersionDetectionImplementation](./nefarius.vicius.abstractions.models.productversiondetectionimplementation.md)

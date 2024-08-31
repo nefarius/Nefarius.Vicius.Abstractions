@@ -20,3 +20,4 @@ Implements [IComparable](https://docs.microsoft.com/en-us/dotnet/api/system.icom
 | FileSize | 2 | Performs checking a specified file size for matching. |
 | FileChecksum | 3 | Calculates and compares the hash of a given file. |
 | CustomExpression | 4 | Custom inja expression. |
+| FixedVersion | 5 | A fixed version string. |
