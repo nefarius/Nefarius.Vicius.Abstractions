@@ -180,7 +180,7 @@ public sealed class CustomExpressionConfig : ProductVersionDetectionImplementati
 }
 
 /// <summary>
-///     A custom expression to evaluate.
+///     A fixed version string.
 /// </summary>
 [SuppressMessage("ReSharper", "UnusedMember.Global")]
 public sealed class FixedVersionConfig : ProductVersionDetectionImplementation

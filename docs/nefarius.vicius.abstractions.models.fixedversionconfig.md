@@ -2,7 +2,7 @@
 
 Namespace: Nefarius.Vicius.Abstractions.Models
 
-A custom expression to evaluate.
+A fixed version string.
 
 ```csharp
 public sealed class FixedVersionConfig : ProductVersionDetectionImplementation
