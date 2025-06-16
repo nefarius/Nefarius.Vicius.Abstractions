@@ -10,11 +10,3 @@ Managed types for the [vīcĭus updater agent](https://github.com/nefarius/viciu
 ## Documentation
 
 [Link to API docs](docs/index.md).
-
-### Generating documentation
-
-```PowerShell
-dotnet build -c:Release
-dotnet tool install --global Nefarius.Tools.XMLDoc2Markdown
-xmldoc2md .\bin\netstandard2.0\Nefarius.Vicius.Abstractions.dll .\docs\
-```
