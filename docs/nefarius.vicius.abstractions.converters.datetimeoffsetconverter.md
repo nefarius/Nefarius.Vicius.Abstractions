@@ -5,7 +5,7 @@ Namespace: Nefarius.Vicius.Abstractions.Converters
 [DateTimeOffset](https://docs.microsoft.com/en-us/dotnet/api/system.datetimeoffset) to ISO 8601 (or custom formats) string (UTC) converter.
 
 ```csharp
-public sealed class DateTimeOffsetConverter : System.Text.Json.Serialization.JsonConverter`1[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+public sealed class DateTimeOffsetConverter : System.Text.Json.Serialization.JsonConverter`1[[System.DateTimeOffset, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
 ```
 
 Inheritance [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object) → JsonConverter → JsonConverter&lt;DateTimeOffset&gt; → [DateTimeOffsetConverter](./nefarius.vicius.abstractions.converters.datetimeoffsetconverter.md)
