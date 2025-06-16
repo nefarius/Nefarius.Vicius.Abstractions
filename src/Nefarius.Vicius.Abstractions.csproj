@@ -8,6 +8,7 @@
         <RepositoryUrl>https://github.com/nefarius/Nefarius.Vicius.Abstractions</RepositoryUrl>
         <PackageProjectUrl>https://github.com/nefarius/Nefarius.Vicius.Abstractions</PackageProjectUrl>
         <Description>Collection of models for the Nefarius vicius updater agent JSON requests/replies.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <PropertyGroup>
