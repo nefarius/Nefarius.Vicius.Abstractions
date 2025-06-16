@@ -10,3 +10,7 @@ Managed types for the [vīcĭus updater agent](https://github.com/nefarius/viciu
 ## Documentation
 
 [Link to API docs](docs/index.md).
+
+## Dependencies
+
+- [NJsonSchema for .NET](https://github.com/RicoSuter/NJsonSchema)
