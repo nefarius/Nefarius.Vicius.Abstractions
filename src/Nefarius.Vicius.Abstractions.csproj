@@ -16,7 +16,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="NJsonSchema.CodeGeneration" Version="11.6.0" PrivateAssets="All"/>
+        <PackageReference Include="NJsonSchema.CodeGeneration" Version="11.6.1" PrivateAssets="All"/>
         <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0"/>
         <PackageReference Include="MinVer" Version="7.0.0">
             <PrivateAssets>all</PrivateAssets>
